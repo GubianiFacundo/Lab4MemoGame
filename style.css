@@ -1,0 +1,52 @@
+.memo-game{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memo-board{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memo-card{
+    width: calc(25% - 10px);
+    height: 150px;
+    margin: 5px;
+    background-color: white;
+    box-shadow:0 0 10px grey;
+    position: relative;
+}
+
+.memo-cardImg{
+    width: 160px;
+    height: 130px;
+    margin: 10px;
+    margin-left: -10px;
+    position: absolute;
+}
+
+.memo-opacity{
+    opacity: 0;
+}
+
+.cards-container{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer-counter{
+
+}
