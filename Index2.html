@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    div#memoryBoard{
+        background: #CCC;
+        border: #999 1 px solid;
+        width: 800px;
+        height: 500px;
+        padding: 24px;
+        margin: opx auto;
+    }
+    div#memoryBoard > div {
+        background: url(tile_bg.jpg) no-repeat;
+        border: #000 1px solid;
+        width: 71px;
+        height: 71px;
+        float: left;
+        margin: 10px;
+        padding: 20px;
+        font-size: 64px;
+        cursor: pointer;
+        text-align: center;
+    }
+    </style>
+    <script>
 // this.dataset.value=="a"
 var memoryArray = ['a','a','b','b','c','c','d','d','e','e','f','f','g','g','h','h'];
 var memoryValues = [];
@@ -58,3 +88,11 @@ function memoryFlipTile(tile, val) {
         }
     }
 }
+
+    </script>
+</head>
+<body>
+    <div id="memoryBoard"></div>
+    <script>newBoard()</script>
+</body>
+</html>
