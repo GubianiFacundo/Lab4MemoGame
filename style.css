@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.memo-board{
+.tablero{
     width: 800px;
     height: 800px;
     display: flex;
@@ -15,16 +15,16 @@
     align-items: center;
 }
 
-.memo-card{
+.tarjeta{
     width: calc(25% - 10px);
     height: 150px;
-    margin: 5px;
+    margin: 5px; 
     background-color: white;
     box-shadow:0 0 10px grey;
     position: relative;
 }
 
-.memo-cardImg{
+.imagen1{
     width: 160px;
     height: 130px;
     margin: 10px;
@@ -32,29 +32,39 @@
     position: absolute;
 }
 
-.memo-cardImg2{
+.imagen2{
     width: 140px;
     height: 130px;
     margin: 10px;
     margin-left: 0px;
-    position: absolute;
+    position: absolute; 
 }
 
-.memo-opacity{
+.transparente{
     opacity: 0;
+    transition: 0.5s;
 }
 
-.cards-container{
+.mostrar{
+    opacity: 1;
+}
+
+.disabled { 
+    pointer-events: none;
+}
+
+.contenedortarjetas{
     width: 600px;
     height: 700px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.footer{
-    display: flex;
+.boxintentos { position: absolute;
+    left: 0;
+    top: 180px;
+    text-align: center;
+    margin-left: 20px;
+    color: grey
 }
 
-.footer-counter{
-
-}

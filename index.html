@@ -1,87 +1,93 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MemoGame♥</title>
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
+
 </head>
 <body>
-    <div class="memo-game">
-        <div class="memo-board">
+     
+    <div class="memo-game"> 
+        <div class="tablero"> 
             <h1>MemoGame♥</h1>
-            <div class="cards-container">
-                <button onclick="newBoard()">Generar</button>
-                
-                <!-- <div class="memo-card" onclick="">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity memo-cardImg2" data-value="a">
+            <div class="contenedortarjetas">            
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/chrome.svg" class="imagen2 transparente" data-value="chrome">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity memo-cardImg2" data-value="a">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/firefox.svg" class="imagen2 transparente" data-value="firefox">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/google-icon.svg" class="imagen2 transparente" data-value="google">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/google-icon.svg" class="imagen2 transparente" data-value="google">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/javascript.svg" class="imagen2 transparente" data-value="javascript">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/instagram-icon.svg" class="imagen2 transparente" data-value="instagram">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/html-5.svg" class="imagen2 transparente" data-value="html">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/javascript.svg" class="imagen2 transparente" data-value="javascript">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/facebook.svg" class="imagen2 transparente" data-value="facebook">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/opera.svg" class="imagen2 transparente" data-value="opera">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/html-5.svg" class="imagen2 transparente" data-value="html">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/opera.svg" class="imagen2 transparente" data-value="opera">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/chrome.svg" class="imagen2 transparente" data-value="chrome"> 
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/instagram-icon.svg" class="imagen2 transparente" data-value="instagram">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/firefox.svg" class="imagen2 transparente" data-value="firefox">
                 </div>
-                <div class="memo-card">
-                    <img src="Signo.png" class="memo-cardImg">
-                    <img src="IgLogo.png" class="memo-opacity">
-                </div> -->
+                <div class="tarjeta">
+                    <img src="img/Signo.png" class="imagen1">
+                    <img src="img/facebook.svg" class="imagen2 transparente" data-value="facebook">
+                </div>
             </div>
-            <div class="footer">No puedo hacer que esto quede debajo de todo lo otro re copado !!!</div>
+            <div class="boxintentos">
+                <h1>Intentos:</h1>
+                <h1 class="intentos">0</h1>
+                <button onclick="reiniciarJuego()" >Reiniciar Juego</button>
+            </div>
+             
         </div>
     </div>
+    
+    <script type="text/javascript" src="script.js"></script>   
 </body>
 </html>
